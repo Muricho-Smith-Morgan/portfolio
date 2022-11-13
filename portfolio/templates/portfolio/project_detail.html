@@ -1,0 +1,18 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block content %}
+<h1>{{ projects.title }}</h1>
+<div class="row">
+    <div class="col-md-8">
+        <img src="{{projects.image.url }}" alt="" width="100%">
+    </div>
+    <div class="col-md-4">
+        <h5>About the project:</h5>
+        <p>{{ projects.description }}</p>
+        <br>
+        <h5>Technology used:</h5>
+        <p>{{ projects.technology }}</p>
+    </div>
+</div>
+{% endblock %}
